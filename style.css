@@ -1,29 +1,43 @@
-body {
+#c4e8c4body {
 	margin: 0;
 	padding: 0;
 	font-family: Raleway, Arial, sans-serif;
+	background-color: #e0ebe8;
+}
+.me{
+	border-radius: 50%;
 }
 #about {
-	color: white;
-	background: -webkit-linear-gradient(#ACBCAF, #B2C0B0);
-	background: -o-linear-gradient(#ACBCAF, #B2C0B0);
-	background: -moz-linear-gradient(#ACBCAF, #B2C0B0);
-	background: linear-gradient(#ACBCAF, #B2C0B0);}
+	color: #45b29a;
+
+
+}
+#hi {
+	color: #45b29a;
+
+
+}
+#skills {
+	color: #45b29a;
+}
+#portfolio {
+	color: #45b29a;
+}
 
 .profileImage {
 	border-radius: 50%;
 }
 a:hover {
-	color: #E31B6D
+	color: #c4e8c4
 }
 i:hover {
-	color: #E31B6D;
+	color: #c4e8c4;
 }
 .bottom {
 	display: inline-block;
 	width: 3em;
 	height: 3em;
-	border: 0.2em solid #E31B6D;
+	border: 0.2em solid #c4e8c4;
 	border-radius: 50%;
 	margin-left: 0.75em;
 	cursor: pointer;
@@ -58,19 +72,20 @@ i:hover {
 	cursor: pointer;
 
 }
+.newColor{
+	color:#45b29a;
+}
+.bg{
+	background-color: #ffffff;
 
+}
 .background {
-	background: -webkit-linear-gradient(#ACBCAF, #B2C0B0);
-	background: -o-linear-gradient(#ACBCAF, #B2C0B0);
-	background: -moz-linear-gradient(#ACBCAF, #B2C0B0);
-	background: linear-gradient(#ACBCAF, #B2C0B0);
 
-/*
-	background-image: url('surfer.jpg');
 
+	background-image: url('./img/land.svg');
 	background-size: cover;
 	background-position: center center;
-*/
+
 	position: relative;
 	top: 0px;
 	bottom: 0;
@@ -82,6 +97,7 @@ i:hover {
 	 top:2vh;
 	 z-index:9999;
 }
+
 /*
 .background-overlay {
 	position: absolute;
@@ -95,12 +111,6 @@ i:hover {
 
 hr{
 	width:80%;
-}
-#skills {
-	background-color: #ffffff;
-}
-#portfolio {
-	background-color: #ffffff;
 }
 
 
@@ -216,10 +226,7 @@ hr{
 	    text-transform: uppercase;
 	    font-weight: 500;
 	  letter-spacing: 3px;
-	    background: -webkit-linear-gradient(#ACBCAF, #B2C0B0);
-	    background: -o-linear-gradient(#ACBCAF, #B2C0B0);
-	    background: -moz-linear-gradient(#ACBCAF, #B2C0B0);
-	    background: linear-gradient(#ACBCAF, #B2C0B0);
+		background-color: #e0ebe8;
 
 
 }
@@ -239,7 +246,7 @@ a:active{
 }
 a {
 	padding: 10px;
-	color: white;
+	color: #45b29a;
 	text-decoration: none;
 	font-weight: bold;
 	border:none;

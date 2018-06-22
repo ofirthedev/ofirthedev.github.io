@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
 	<link href="form.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
@@ -10,8 +11,6 @@
 	<link href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" rel="stylesheet" type="text/css">
 	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" type="text/css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js">
-	</script>
-	<script src="typed.min.js">
 	</script>
 	<script type="text/javascript" src="script.js">
 	</script>
@@ -65,32 +64,51 @@
 						 	</div>
 
 				<article class="pt6 dt w-100">
-					<div style="font-size:5vw;" class="v-mid tc white">
-						<div style="display:inline-block; "  >Hello , I'm</div>
-							<div style="display:inline-block; color:#E31B6D;">&lt; Ofir Cohen /&gt;<br></div>
+					<div style="font-size:7vw;" class="v-mid tc newColor">
+						<div style="display:inline-block;font-family: 'Bilbo Swash Caps';"  >I'm &nbsp;Ofir</div>
+							</div>
+							<div  style="font-size:2vw;" class="tc newColor">a web developer.<br></div>
 							<br>
-						</div>
+
 					</article>
-
-						<div class="tc" style="font-size:5vw;"><span style="" class="white type"></span></div>
-
         <div id="myID" class="button" style="display:none; position: fixed; bottom: 10vh;right:0; ">
           <a  href="#home"><i class="fas black fa-chevron-circle-up fa-3x"></i></a>
         </div>
         <div class="arrowbottom">
-          <a href="#skills">
+          <a href="#hi">
           <div  class="bottom" style=" position: absolute;left: 50%;bottom: 5vh;margin-left:-1.5em;"></div></a>
         </div>
       </div>
   </div>
 
 	</section>
+<div class="bg">
+	<section id="hi">
+		<br><br>
+				<div class="container">
+					<div class="tc">
+
+
+		<br>
+		<img class="me" width="150" height="150" src="./img/me.svg" />
+	<h1>HI!</h1>
+<p>
+	<h5>
+I'm a web developer based in Haifa, Israel.<br> I have a passion
+for web development and love to <br> bring new ideas to to world.<br>
+I like to surf and explore nature.
+</h5>
+</p>
+<br>
+</div>
+</div>
+	</section>
 
 	<section id="skills">
 		<div class="container">
-			<div style="color:black;" class=" tc">
-				<br>
-					<h1>MY SKILLS</h1>
+			<div style="" class=" tc">
+				<br>	<center>	<hr></center><br>
+					<h1>What I can do</h1>
 
 			</div>
 			<div class="row justify-content-md-center" >
@@ -109,10 +127,11 @@
 			</div>
 				</div>
 			</section>
-			<hr>
 
 			<section id="portfolio">
-<center><h1>PORTFOLIO</h1>
+
+	<br>	<center>	<hr></center><br>
+<center><h1>Portfolio</h1>
 
 
 
@@ -140,12 +159,13 @@
 				</center>
 			</section>
 
-
-	<section id="about">
-		<div class="container">
-			<hr>
-		<div class="tc">	<h1>WHO AM I</h1></div>
 <br>
+	<section id="about">
+
+		<div class="container">
+			<br>		<center>	<hr></center><br>
+		<div class="tc">	<h1>Who Am I</h1></div>
+
 			<div class="row">
 
 				<div class="col-7">
@@ -188,6 +208,7 @@
 
 				  <input  class="submit" type="submit" id="submit"   value="SUBMIT"/>
 				</form>
+				<br><br>
 			</div>
 				</div>
 
@@ -198,8 +219,8 @@
 <br>
 	</section>
 	<section id="footer">
-		<div style="text-align:center; background-color:#3F4E50;">
-			<div style="display:inline-block; color:white;">
+		<div style="text-align:center; background-color:#e0ebe8;">
+			<div style="display:inline-block; color:#45b29a;">
 				Website made with love by me
 			</div>
 			<div class="container">
@@ -228,9 +249,9 @@
 											</div>
 									</div>
 									<!-- Copyright Section -->
-									<div class="row text-center footnote">
-											<div style="color:white;" class="col-12">
-													<text>OFIR COHEN <span>©2018</span></text>
+									<div class="row text-center">
+											<div style="color:#45b29a;" class="col-12">
+													OFIR COHEN <span>©2018</span>
 											</div>
 									</div>
 							</div>
@@ -240,6 +261,7 @@
 
 
 	</section>
+</div>
 	<script type="text/javascript">
 
 	var div = document.getElementsByClassName('accordionButton')[0];
@@ -258,15 +280,7 @@ else 		{//menu close
 }
 	});
 
-	var typed = new Typed(".type", {
-	strings: ["I build websites.", "I am creative.", "I have no limits."],
-	smartBackspace: true, // Default value
-	loop:true,
-	typeSpeed:130,
-	backSpeed:40,
-	backDelay:2000,
 
-});
 (function(){
 					emailjs.init("user_zPnRBmralEUDvRlR6TCqW");
 			 })();
