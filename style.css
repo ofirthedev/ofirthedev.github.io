@@ -1,9 +1,48 @@
-#c4e8c4body {
+body {
 	margin: 0;
 	padding: 0;
 	font-family: Raleway, Arial, sans-serif;
 	background-color: #e0ebe8;
 }
+.wrap {
+	position: relative;
+	width: 100%;
+  }
+  
+  .image {
+	display: block;
+	width: 100%;
+	
+	height: auto;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color:rgb(83, 109, 83);
+  }
+  
+  .wrap:hover .overlay {
+	opacity: 0.9;
+  }
+  
+  .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
 .me{
 	border-radius: 50%;
 }
@@ -13,13 +52,22 @@
 
 }
 #hi {
-	color: #45b29a;
 
 
 }
-#skills {
-	color: #45b29a;
+#hi h2 {
+	
+		display: block;
+		font: 24px 'ProximaNovaExCn-Semibold', Arial;
+		margin: 0;
+		padding-bottom: 50px;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+		color: #000;
+		background: url(img/sep.png) no-repeat center 50px;
+		background-size: 50px 3px;
 }
+
 #portfolio {
 	color: #45b29a;
 }
@@ -147,13 +195,20 @@ hr{
 		transform: translateY(-10px);
 	}
 }
+.imofir{
+
+font-size:6em;
+}
+.webdev{
+	font-size:1.5em;
+}
 #myID {
 	color: black;
   position:fixed;
   bottom:10;
   right:100;
+  z-index: 9999;
 }
-/*smaller than 750px*/
 
 
 .accordionContent {
@@ -161,7 +216,7 @@ hr{
 	width: 25vw;
 	float: left;
 	_float: none;
-	background: #ACBCAF;
+	background: rgb(79, 87, 81);
 	font-size: 12px;
 	line-height: 12px;
 	text-align: center;
@@ -183,7 +238,7 @@ hr{
     line-height: 14px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #FFFFFF;
+    color: rgb(0, 0, 0);
     padding: 30px;
 		position:fixed;
 		z-index: 9999;
@@ -252,42 +307,19 @@ a {
 	border:none;
 	outline : none;
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
-/* relevant styles */
-.img__wrap {
-  position: relative;
-  height: 200px;
-display: inline-block;
-  width: 257px;
-}
-
-.img__description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 1;
-}
-/*smaller than 750px*/
+/*smaller than 750px */
 @media screen and (max-width : 750px){
 
+	.text{
+		font-size: 16px;
+	}
+	.imofir{
+		font-size: 5em;
+	}
+	.webdev{
+		font-size: 1.5em;
+	}
 	.accordionButton{
 		display: block;
 
