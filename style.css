@@ -215,7 +215,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
 	font-size:12vh;
-	width:300px;
+	width:310px;
 }
 .webdev{
 	position: absolute;
@@ -223,7 +223,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
 	font-size:3vh;
-	width:300px;
+	width:310px;
 }
 #myID {
 	color: black;
