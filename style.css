@@ -1,6 +1,6 @@
 body {
-	margin: 0;
-	padding: 0;
+	margin:0 auto;
+
 	font-family: Raleway, Arial, sans-serif;
 	background-color: #e0ebe8;
     overflow-x:hidden;
@@ -211,23 +211,19 @@ hr{
 }
 .imofir{
 	position: absolute;
-	margin: auto;
-	top: 30%;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 320px;
-font-size:12vh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size:12vh;
+	width:300px;
 }
 .webdev{
 	position: absolute;
-	margin: auto;
-	top: 47%;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	font-size:3vh;
+	width:300px;
 }
 #myID {
 	color: black;
