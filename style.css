@@ -3,17 +3,14 @@ body {
 	padding: 0;
 	font-family: Raleway, Arial, sans-serif;
 	background-color: #e0ebe8;
+    overflow-x:hidden;
+
 }
 .wrap {
 	position: relative;
 	width: 100%;
   }
-.designimage{
 
-}
-.developimage{
-
-}
   .image {
 	display: block;
 	width: 100%;
@@ -87,6 +84,7 @@ i:hover {
 	color: #c4e8c4;
 }
 .bottom {
+	
 	display: inline-block;
 	width: 3em;
 	height: 3em;
@@ -96,6 +94,13 @@ i:hover {
 	cursor: pointer;
 	-webkit-transition: -webkit-transform .8s ease-in-out;
 	transition: transform .8s ease-in-out;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 5em;
+	max-height: 5em;
 }
 .bottom:hover {
 	display: inline-block;
@@ -106,6 +111,8 @@ i:hover {
 	margin-left: 0.75em;
 	-webkit-transform: rotate(360deg);
 	transform: rotate(360deg);
+	max-width: 5em;
+	max-height: 5em;
 }
 .bottom:after {
 	cursor: pointer;
@@ -119,6 +126,8 @@ i:hover {
 	-moz-transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
 	transform: rotate(135deg);
+	max-width: 5em;
+	max-height: 5em;
 }
 .arrowbottom {
 	text-align: center;
@@ -201,11 +210,24 @@ hr{
 	}
 }
 .imofir{
-
-font-size:6em;
+	position: absolute;
+	margin: auto;
+	top: 30%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 320px;
+font-size:12vh;
 }
 .webdev{
-	font-size:1.5em;
+	position: absolute;
+	margin: auto;
+	top: 47%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 320px;
+	font-size:3vh;
 }
 #myID {
 	color: black;
@@ -312,19 +334,33 @@ a {
 	border:none;
 	outline : none;
 }
-
+.aligncenter{
+	text-align:left;
+}
+.hiddendevelop{
+	display: none;
+}
+/*smaller than 576px*/
+@media screen and (max-width : 576px){
+	.developimage{
+		display: none;
+	}
+	.hiddendevelop{
+		display: block;
+	}
+	.aligncenter{
+		text-align:center;
+	}
+}
 /*smaller than 750px */
-@media screen and (max-width : 750px){
+@media screen and (max-width : 768px){
+
+
 
 	.text{
 		font-size: 16px;
 	}
-	.imofir{
-		font-size: 5em;
-	}
-	.webdev{
-		font-size: 1.5em;
-	}
+
 	.accordionButton{
 		display: block;
 
