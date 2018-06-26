@@ -117,7 +117,8 @@ hr{
 .arrow {
 	position:absolute;
     width:100%;
-    bottom:0;
+	bottom:0;
+	font-size:3vh;
     text-align:center;
   }
 .button{
