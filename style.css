@@ -176,6 +176,7 @@ hr{
   bottom:10;
   right:100;
   z-index: 9999;
+  font-size: 2vh;
 }
 .nav-icons{
 	right:0;
