@@ -8,11 +8,15 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > 200) { //scrolled past the other div?
 			$("#myID").show(200);
+			
+
 			$("#navbarchange").animate( { "opacity": "show"} , 200 );
 			//reached the desired point -- show div
 		} else {
 			$("#myID").hide(200);
+
 			$("#navbarchange").animate( { "opacity": "hide"} , 200 );
+			
 			//reached the desired point -- show div
 		}
 	});

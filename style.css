@@ -37,7 +37,7 @@ body {
   
   .text {
 	color: white;
-	font-size: 20px;
+	font-size: 2vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -53,22 +53,7 @@ body {
 
 
 }
-#hi {
 
-
-}
-#hi h2 {
-	
-		display: block;
-		font: 24px 'ProximaNovaExCn-Semibold', Arial;
-		margin: 0;
-		padding-bottom: 50px;
-		text-transform: uppercase;
-		letter-spacing: 0.3em;
-		color: #000;
-		background: url(img/sep.png) no-repeat center 50px;
-		background-size: 50px 3px;
-}
 
 #portfolio {
 	color: #45b29a;
@@ -83,31 +68,8 @@ a:hover {
 i:hover {
 	color: #c4e8c4;
 }
-.bottom {
-	
-	display: inline-block;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	margin-left: 0.75em;
-	cursor: pointer;
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	transition: transform .8s ease-in-out;
-	position: absolute;
-	
-}
-.bottom:hover {
-	display: inline-block;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	margin-left: 0.75em;
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
-	max-width: 5em;
-	max-height: 5em;
 
-}
+
 
 .bounce {
 	animation: bounce 2s infinite;
@@ -125,28 +87,7 @@ i:hover {
 	}
   }
 
-.bottom:after {
-	cursor: pointer;
-	content: '';
-	display: inline-block;
-	margin-top: 0.4em;
-	width: 2em;
-	height: 2em;
-	border-top: 2px solid #fafafa;
-	border-right: 2px solid #fafafa;
 
-	transform: rotate(135deg);
-	max-width: 5em;
-	max-height: 5em;
-	    -webkit-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
-
-}
-.arrowbottom {
-	text-align: center;
-	cursor: pointer;
-
-}
 .newColor{
 	color:#45b29a;
 }
@@ -162,33 +103,23 @@ i:hover {
 	background-position: center center;
 
 	position: relative;
-	top: 0px;
+	top: 0;
 	bottom: 0;
 	height: 100vh;
 
 }
-.nav-icons{
-	position:fixed;
-	 top:2vh;
-	 z-index:9999;
-}
 
-/*
-.background-overlay {
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.5);
-	top: 0px;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-}
-*/
+
 
 hr{
 	width:80%;
 }
-
-
+.arrow {
+	position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+  }
 .button{
   transition: all 500ms ease;
 
@@ -228,7 +159,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
 	font-size:12vh;
-	width:350px;
+	width:100vw;
 }
 .webdev{
 	position: absolute;
@@ -236,7 +167,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
 	font-size:3vh;
-	width:320px;
+	width:100vw;
 }
 #myID {
 	color: black;
@@ -245,40 +176,50 @@ hr{
   right:100;
   z-index: 9999;
 }
+.nav-icons{
+	right:0;
+    font-size: 3vh;
 
-
-.accordionContent {
-
-	width: 25vw;
-	float: left;
-	_float: none;
-	background: rgb(79, 87, 81);
-	font-size: 12px;
-	line-height: 12px;
-	text-align: center;
-	font-weight: 500;
-	padding: 15px 0px 15px 0px;
-	color: #ffffff;
-}
-.nav-mobile{
-	width:25vw;
-	float:left;
-}
-.accordionButton {
-	display: none;
-    height: 32px;
-    float: left;
-    _float: none;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    padding: 30px;
+    padding: 3vh 0  0 3vw ;
 		position:fixed;
 		z-index: 9999;
 }
+
+.accordionButton {
+	display: none;
+    float: left;
+    _float: none;
+    cursor: pointer;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding: 3vh 0  0 3vw ;
+		position:fixed;
+		z-index: 9999;
+}
+.mobnav{
+	padding:6vh 0 0 0;
+}
+.accordionContent {
+	
+	width:25vh;
+	float: left;
+	_float: none;
+	background: rgb(79, 87, 81);
+
+	
+	text-align: center;
+	font-weight: 500;
+	padding: 3vh 0 3vh 0;
+	color: #ffffff;
+}
+.nav-mobile{
+	width:25vh;
+	float:left;
+	font-size:2vh;
+}
+
 
 
 .navbar-active{
@@ -301,7 +242,7 @@ hr{
 	transition: .5s all ease-out;
 	color: #ffffff;
 	text-decoration: none;
-	padding: 2px 3px 2px 5px;
+	
 
 }
 
@@ -309,14 +250,12 @@ hr{
 	font-weight: 500;
 	z-index: 9999;
 	display:none;
-	    height: 70px;
+	    height: 10vh;
 	    position: fixed;
 	    transition:  0.2s ease-in-out;
 	    width: 100%;
-	    font-size: 14px;
 	    text-transform: uppercase;
 	    font-weight: 500;
-	  letter-spacing: 3px;
 		background-color: #e0ebe8;
 
 
@@ -336,7 +275,7 @@ a:active{
 
 }
 a {
-	padding: 10px;
+	padding: 1vh;
 	color: #45b29a;
 	text-decoration: none;
 	font-weight: bold;
@@ -351,6 +290,7 @@ a {
 }
 /*smaller than 576px*/
 @media screen and (max-width : 576px){
+	
 	.developimage{
 		display: none;
 	}
@@ -360,7 +300,12 @@ a {
 	.aligncenter{
 		text-align:center;
 	}
+	.text{
 
+		font-size:3vh;
+	}
+	
+	
 	.x1{
 		display:none;
 
@@ -375,7 +320,9 @@ a {
 }
 /*smaller than 750px */
 @media screen and (max-width : 768px){
-
+	.social{
+		font-size:0;
+	}
 	.x1{
 	display:none;
 	}
@@ -386,9 +333,7 @@ a {
 
 	}
 	
-	.text{
-		font-size: 16px;
-	}
+
 
 	.accordionButton{
 		display: block;
