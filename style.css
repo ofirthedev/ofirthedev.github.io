@@ -7,17 +7,14 @@ body {
 
 }
 .wrap {
+	display:inline-block;
 	position: relative;
 	width: 100%;
   }
 
-  .image {
-	display: block;
-	width: 100%;
-	
-	height: auto;
-  }
-  
+  .inline-block {
+	display: inline-block;
+ }
   .overlay {
 	position: absolute;
 	top: 0;
@@ -244,7 +241,6 @@ hr{
 	transition: .5s all ease-out;
 	color: #ffffff;
 	text-decoration: none;
-	
 
 }
 
@@ -259,7 +255,7 @@ hr{
 	    text-transform: uppercase;
 	    font-weight: 500;
 		background-color: #e0ebe8;
-
+	
 
 }
 a:hover{
