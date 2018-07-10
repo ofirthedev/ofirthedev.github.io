@@ -285,19 +285,19 @@ Let's make crazy ideas into reality.
 						<input type="hidden" name="contact_number">
 
 				  <div class="inputGroup">
-				    <input id="name" name="user_name" type="text" required />
+				    <input autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" id="name" name="user_name" type="text" required />
 				    <span class="inputBar"></span>
 				    <label>Name</label>
 				  </div>
 
 				  <div class="inputGroup">
-				    <input id="email" name="user_email" type="email" required />
+				    <input autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" id="email" name="user_email" type="email" required />
 				    <span class="inputBar"></span>
 				    <label>Email</label>
 				  </div>
 
 				  <div class="inputGroup">
-				    <textarea id="textarea" name="contact" type="textarea" required></textarea>
+				    <textarea autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" id="textarea" name="contact" type="textarea" required></textarea>
 				    <span class="inputBar"></span>
 				    <label>Message</label>
 				  </div>
