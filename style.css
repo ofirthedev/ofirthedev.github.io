@@ -6,10 +6,12 @@ body {
     overflow-x:hidden;
 
 }
+
 .wrap {
 	display:inline-block;
 	position: relative;
 	width: 100%;
+
   }
 
   .inline-block {
@@ -316,7 +318,7 @@ a {
 	}
 	
 }
-/*smaller than 750px */
+/*smaller than 768px */
 @media screen and (max-width : 768px){
 	.social{
 		font-size:0;
@@ -347,6 +349,8 @@ a {
 
 	}
 }
+/*smaller than 900px */
+
 @media screen and (max-width : 900px){
 
 	.x1{
@@ -358,6 +362,14 @@ a {
 			display:none;
 	
 		}
+}
+/*smaller than 500px */
+
+@media screen and (max-width : 500px){
+
+	.wrap{
+		width:100%;
+	}
 }
 /*MOVING CLOUDS*/
 
