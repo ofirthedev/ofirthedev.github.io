@@ -464,4 +464,15 @@ a {
 	height: 180px;
 	right: 50px;
 	top: -90px;
+
 }
+.btn{
+	transition: all .3s ease-in-out;
+background-color:lightgreen;
+color:black !important;
+}
+.btn:hover{
+	background-color:salmon;
+	color:white !important;
+	transform: scale(1.03); 
+	}
