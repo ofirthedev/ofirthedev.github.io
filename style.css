@@ -290,7 +290,9 @@ a {
 }
 /*smaller than 576px*/
 @media screen and (max-width : 576px){
-	
+	.sm-fix{
+		text-align: center;
+	}
 	.developimage{
 		display: none;
 	}
